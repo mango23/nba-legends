@@ -1,6 +1,6 @@
 /* 新闻数据（由 scripts/update_news.py 每日自动生成，请勿手改） */
 const NEWS_DATA = {
-  "updatedAt": "2026-07-30 10:48",
+  "updatedAt": "2026-07-30 11:31",
   "source": "每日自动更新 · Google News / ESPN RSS / NBA.com + 人工校准",
   "items": [
     {
