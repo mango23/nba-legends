@@ -1,8 +1,43 @@
 /* 新闻数据（由 scripts/update_news.py 每日自动生成，请勿手改） */
 const NEWS_DATA = {
-  "updatedAt": "2026-07-27 23:56",
+  "updatedAt": "2026-07-30 11:30",
   "source": "每日自动更新 · Google News / ESPN RSS + 人工校准",
   "items": [
+    {
+      "date": "2026-07-30",
+      "tag": "动态",
+      "title": "76ers welcome LeBron with coronation fit for King",
+      "desc": "The 76ers and LeBron James announced Monday their two-year deal on the veteran's minimum for $8 million total was official and that the four-time NBA MVP was indeed a Sixer.",
+      "url": "https://www.espn.com/nba/story/_/id/49463246/76ers-celebrate-lebron-james-coronation-fit-hoops-king"
+    },
+    {
+      "date": "2026-07-30",
+      "tag": "签约",
+      "title": "Sources: KCP to join 76ers after Grizzlies buyout",
+      "desc": "Kentavious Caldwell-Pope has agreed to a buyout with the Grizzlies and plans to sign a one-year deal with the 76ers after clearing waivers, sources told ESPN.",
+      "url": "https://www.espn.com/nba/story/_/id/49449509/sources-caldwell-pope-join-76ers-grizzlies-buyout"
+    },
+    {
+      "date": "2026-07-29",
+      "tag": "全明星",
+      "title": "'Oh my gosh, here we go': How LeBron landed in Philadelphia",
+      "desc": "For 22-time All-Star LeBron James, his last decision was about loyalty -- not to any of his previous stops but to his own basketball compass.",
+      "url": "https://www.espn.com/nba/story/_/id/49470047/inside-lebron-james-decision-join-philadelphia-76ers"
+    },
+    {
+      "date": "2026-07-29",
+      "tag": "签约",
+      "title": "Forget 'trusting the process': How the rest of the NBA views the 76ers' daring moves",
+      "desc": "NBA insiders questioned why the four-time MVP would sign with the 76ers.",
+      "url": "https://www.espn.com/nba/story/_/id/49457033/around-nba-lebron-james-move-philadelphia-76ers-puts-pressure-maxey-brown-embiid"
+    },
+    {
+      "date": "2026-07-29",
+      "tag": "签约",
+      "title": "Grades for every free agent signing, extension: Draymond, LeBron, Wemby and more",
+      "desc": "We're grading the biggest free agent signings and extensions, including Draymond Green returning to the Warriors on a one-year deal.",
+      "url": "https://www.espn.com/nba/story/_/id/48957095/2026-nba-free-agency-grades-offseason-signings-deals-contracts-extensions-depth-charts"
+    },
     {
       "date": "2026-07-27",
       "tag": "动态",
@@ -51,41 +86,6 @@ const NEWS_DATA = {
       "title": "Shams：詹姆斯已正式与76人完成签约，合同含15%交易保证金",
       "desc": "北京时间7月27日，据ESPN名记Shams报道，勒布朗·詹姆斯正式与费城76人签下2年800万美元合同，第二年为球员选项，另含15%交易保证金。41岁的詹姆斯开启生涯第24个赛季。",
       "url": "https://www.espn.com/nba/story/_/id/49440164/lebron-chooses-76ers-sign-2-year-8-million-contract"
-    },
-    {
-      "date": "2026-07-25",
-      "tag": "城市荣誉",
-      "title": "宾夕法尼亚州州长宣布7月24日为「勒布朗·詹姆斯日」",
-      "desc": "州长乔什·夏皮罗在X上正式宣布全州庆祝詹姆斯加盟。Fanatics同款23号76人球衣已上架预售，定价125美元，8月底发货；博彩市场上76人夺冠赔率升至第四（9-1）。",
-      "url": "https://www.nba.com/news/lebron-james-free-agency-sixers-2026"
-    },
-    {
-      "date": "2026-07-24",
-      "tag": "重磅",
-      "title": "官宣！詹姆斯加盟费城76人：「这是我最后的决定」",
-      "desc": "詹姆斯在社交媒体连发三文宣布加盟76人，2年800万美元老将底薪（上赛季薪资5260万，降幅超92%）。他将联手恩比德、马克西与杰伦·布朗冲击生涯第5冠：「我相信我能帮助76人成为冠军球队，我很兴奋能点燃一座新的球迷城市，开启这最后一段不可思议的旅程。」",
-      "url": "https://www.nba.com/news/lebron-james-free-agency-sixers-2026"
-    },
-    {
-      "date": "2026-06-30",
-      "tag": "离队",
-      "title": "詹姆斯告知湖人不再回归，八年湖人生涯落幕",
-      "desc": "经纪人里奇·保罗确认詹姆斯不会退役也不会留守湖人。八年湖人岁月定格：2020年总冠军+FMVP、历史得分王、父子同台，8次全明星、7次最佳阵容。",
-      "url": "https://www.nba.com/news/lebron-james-lakers-legacy-closes"
-    },
-    {
-      "date": "2026-05-10",
-      "tag": "季后赛",
-      "title": "湖人西部半决赛G4负于雷霆，第23个赛季落幕",
-      "desc": "湖人110-115不敌雷霆止步西部半决赛。赛后詹姆斯表示需要时间思考未来：「我已经做到了一切、见过了一切，但竞争与争冠仍是我的动力。」本赛季他出战60场，场均20.9分6.1篮板7.2助攻。",
-      "url": "https://www.nba.com/news/lebron-james-free-agency-sixers-2026"
-    },
-    {
-      "date": "2026-02-22",
-      "tag": "里程碑",
-      "title": "常规赛总得分突破43,000分",
-      "desc": "对阵凯尔特人一役，詹姆斯常规赛生涯得分突破43,000分大关，继续刷新自己保持的历史纪录。赛季结束时定格在43,440分。",
-      "url": "https://www.olympics.com/en/news/lebron-james-points-tracker-nba-all-time-top-scorer"
     }
   ]
 };
