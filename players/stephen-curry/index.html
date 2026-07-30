@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STEPHEN CURRY · 斯蒂芬·库里 | Chef Curry · The Shooter's Realm</title>
+<meta name="description" content="斯蒂芬·库里主题致敬网站——历史三分王、4×NBA总冠军、2×MVP、奥运金牌，完整生涯数据与每日自动更新最新动态。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="assets/img/logo_warriors.svg" type="image/svg+xml">
+</head>
+<body>
+
+<!-- 自定义光标 -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- 预加载 -->
+<div id="preloader">
+  <svg class="crown" viewBox="0 0 100 70">
+    <path d="M8 58 L4 18 L30 36 L50 8 L70 36 L96 18 L92 58 Z M8 64 L92 64" />
+  </svg>
+  <div class="pct">0%</div>
+  <div class="lbl">CHEF CURRY IS LOADING</div>
+</div>
+
+<!-- 导航 -->
+<nav>
+  <a class="nav-logo" href="#hero">
+    <svg viewBox="0 0 100 70" fill="none"><path d="M8 58 L4 18 L30 36 L50 8 L70 36 L96 18 L92 58 Z" stroke="#FFC72C" stroke-width="6"/></svg>
+    CHEF <em>CURRY</em>
+  </a>
+  <div class="nav-links">
+    <a href="#news">最新动态</a>
+    <a href="#overview">生涯概览</a>
+    <a href="#stats">数据殿堂</a>
+    <a href="#timeline">生涯时间线</a>
+    <a href="#journey">三段王朝</a>
+    <a href="#honors">荣誉殿堂</a>
+    <a href="#olympics">奥运夺金</a>
+    <a href="#offcourt">场外</a>
+    <a href="#gallery">画廊</a>
+  </div>
+  <div class="nav-team">
+    <img src="assets/img/logo_warriors.svg" alt="勇士">
+    现效力 · 金州勇士 #30
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="hero">
+  <div class="hero-bg" style="background-image:url('assets/img/portrait.jpg')"></div>
+  <div class="hero-giant">CHEF</div>
+  <canvas id="particles"></canvas>
+  <div class="hero-vignette"></div>
+  <div class="hero-inner">
+    <div class="hero-tag"><span class="dot"></span> 2026 · 备战生涯第 18 季 · 历史三分王 · 奥运金牌在握</div>
+    <h1 class="hero-name">STEPHEN<br>CURRY</h1>
+    <div class="hero-cn">斯 蒂 芬 · 库 里</div>
+    <p class="hero-sub">历史三分王 · 4×NBA总冠军 · 2×MVP · 奥运金牌 · 一人一城 17 季的金州图腾</p>
+    <div class="hero-chips">
+      <div class="chip"><b>4,233</b><span>生涯三分 · 历史第 1 · 唯一破 4000</span></div>
+      <div class="chip"><b>26,447</b><span>生涯总得分</span></div>
+      <div class="chip"><b>4</b><span>NBA 总冠军</span></div>
+      <div class="chip"><b>2</b><span>常规赛 MVP · 含历史唯一全票</span></div>
+      <div class="chip"><b>18th</b><span>NBA 赛季 · 一人一城</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>SCROLL</span><div class="bar"></div></div>
+</header>
+
+<!-- 跑马灯 -->
+<div class="ticker"><div class="ticker-track" id="tickerTrack"></div></div>
+
+<!-- 01 最新动态 -->
+<section id="news">
+  <div class="sec-bg-word">NEWS</div>
+  <div class="sec-head reveal">
+    <div class="sec-no">01 / LATEST</div>
+    <h2 class="sec-title">最新动态 <span class="updated" id="newsUpdatedWrap"><i id="newsDot"></i><span id="newsUpdated"></span></span></h2>
+    <p class="sec-desc">追踪库里的每一步。本板块每日自动更新，数据来源为 NBA 官网、ESPN 及 The Athletic 等权威媒体。</p>
+  </div>
+  <div class="news-grid" id="newsGrid"></div>
+</section>
+
+<!-- 02 生涯概览 -->
+<section id="overview">
+  <div class="sec-bg-word">LEGACY</div>
+  <div class="sec-head reveal">
+    <div class="sec-no">02 / OVERVIEW</div>
+    <h2 class="sec-title">生涯概览 · <em>17季三分革命</em></h2>
+    <p class="sec-desc">1988年3月14日出生于俄亥俄州阿克伦，2009年首轮第7顺位被金州勇士选中。17个赛季、1065场常规赛——他亲手把篮球的进攻范围从 7 米推到了 14 米外，重新定义了一个位置。以下是截至 2025-26 赛季结束的真实生涯总账。</p>
+  </div>
+  <div class="stat-grid">
+    <div class="stat-card reveal"><span class="rank">历史第 1</span><div class="stat-num" data-count="4233">0</div><div class="stat-label">常规赛三分命中</div><div class="stat-sub">2025.3.13 成为史上首位命中 4000+ 三分的球员</div></div>
+    <div class="stat-card reveal"><span class="rank">历史第 1</span><div class="stat-num" data-count="650">0</div><div class="stat-label">季后赛三分命中</div><div class="stat-sub">远超第二名吉米·巴特勒（200+）</div></div>
+    <div class="stat-card reveal"><span class="rank">历史第 1</span><div class="stat-num" data-count="91.2" data-dec="1">0</div><div class="stat-label">生涯罚球命中率（%）</div><div class="stat-sub">常规赛历史罚球王 · 8 个赛季 90%+</div></div>
+    <div class="stat-card reveal"><span class="rank">历史唯一</span><div class="stat-num" data-count="100">0</div><div class="stat-label">MVP 全票得票率（%）</div><div class="stat-sub">2016 年 131/131 张第一选票 · 史上唯一</div></div>
+    <div class="stat-card reveal"><span class="rank">生涯总账</span><div class="stat-num" data-count="26447">0</div><div class="stat-label">常规赛总得分</div><div class="stat-sub">17 季场均 24.8 分 · 队史得分王</div></div>
+    <div class="stat-card reveal"><span class="rank">生涯总账</span><div class="stat-num" data-count="6729">0</div><div class="stat-label">常规赛总助攻</div><div class="stat-sub">控卫之眼 · 生涯场均 6.3 次</div></div>
+    <div class="stat-card reveal"><span class="rank">生涯总账</span><div class="stat-num" data-count="4957">0</div><div class="stat-label">常规赛总篮板</div><div class="stat-sub">1.88m 控卫中的篮板怪物</div></div>
+    <div class="stat-card reveal"><span class="rank">生涯总账</span><div class="stat-num" data-count="1596">0</div><div class="stat-label">常规赛总抢断</div><div class="stat-sub">防守常被低估 · 真实正负值常年联盟前 5</div></div>
+    <div class="stat-card reveal"><span class="rank">生涯总账</span><div class="stat-num" data-count="1065">0</div><div class="stat-label">常规赛出场数</div><div class="stat-sub">仅缺阵 16 季中约 50 场 · 出勤率 95%+</div></div>
+    <div class="stat-card reveal"><span class="rank">生涯总账</span><div class="stat-num" data-count="4147">0</div><div class="stat-label">季后赛总得分</div><div class="stat-sub">155 场季后赛 · 场均 26.8 分</div></div>
+    <div class="stat-card reveal"><span class="rank">生涯场均</span><div class="stat-num" data-count="24.8" data-dec="1">0</div><div class="stat-label">得分</div><div class="stat-sub">17 个赛季场均 20+ · 历史罕见</div></div>
+    <div class="stat-card reveal"><span class="rank">生涯场均</span><div class="stat-num" data-count="42.2" data-dec="1">0</div><div class="stat-label">三分命中率（%）</div><div class="stat-sub">出手 10,037 次 · 历史出手最多且保持高命中率</div></div>
+  </div>
+</section>
+
+<!-- 03 数据殿堂 -->
+<section id="stats">
+  <div class="sec-bg-word">STATS</div>
+  <div class="sec-head reveal">
+    <div class="sec-no">03 / THE NUMBERS</div>
+    <h2 class="sec-title">数据殿堂 · <em>17 季的完整账簿</em></h2>
+    <p class="sec-desc">从一个被质疑脚踝玻璃属性的 7 号新秀，到把三分线变成自家后院的划时代射手。切换维度，逐季审视。</p>
+  </div>
+  <div class="chart-wrap reveal">
+    <div class="chart-tabs">
+      <button class="chart-tab active" data-key="pts">场均得分</button>
+      <button class="chart-tab" data-key="threepm">场均三分</button>
+      <button class="chart-tab" data-key="ast">场均助攻</button>
+      <button class="chart-tab" data-key="gp">出场数</button>
+    </div>
+    <canvas id="seasonChart"></canvas>
+    <div class="chart-note">数据来源：NBA.com / StatMuse · <b>2009-10 至 2025-26</b> · 金色底纹为夺冠赛季（2015/2017/2018/2022），蓝色高亮为 MVP 赛季（2015/2016）</div>
+  </div>
+  <div class="season-table-wrap reveal">
+    <div class="season-scroll">
+      <table class="season-table">
+        <thead>
+          <tr><th>赛季 / 球队 / 荣誉</th><th>出场</th><th>得分</th><th>助攻</th><th>三分</th><th>投篮%</th><th>三分%</th></tr>
+        </thead>
+        <tbody id="seasonTbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="sec-head reveal" style="margin-top:90px">
+    <div class="sec-no">03+ / RECORDS</div>
+    <h2 class="sec-title">历史纪录 · <em>他独自站立的地方</em></h2>
+  </div>
+  <div class="records-grid" id="recordsGrid"></div>
+</section>
+
+<!-- 04 生涯时间线 -->
+<section id="timeline">
+  <div class="sec-bg-word">JOURNEY</div>
+  <div class="sec-head reveal">
+    <div class="sec-no">04 / TIMELINE</div>
+    <h2 class="sec-title">生涯时间线 · <em>从阿克伦到金州永恒</em></h2>
+    <p class="sec-desc">38 年人生、17 季征程，全部献给一座城市。向下滚动，沿时间之河横渡库里的整个故事。</p>
+  </div>
+  <div class="tl-track" id="tlTrack"></div>
+  <div class="tl-progress"><i id="tlProgressBar" style="width:0"></i></div>
+  <div class="tl-hint">↕ 继续滚动 · 横向穿越 1988 — 2026</div>
+</section>
+
+<!-- 05 三段王朝 -->
+<section id="journey">
+  <div class="sec-bg-word">DYNASTY</div>
+  <div class="sec-head reveal">
+    <div class="sec-no">05 / THREE ERAS</div>
+    <h2 class="sec-title">三段王朝 · <em>一人一城 17 季的金州编年史</em></h2>
+    <p class="sec-desc">在这个球星抱团、忠诚稀缺的时代，库里从未穿过其它战袍。三段王朝，四个总冠军，全部在金州甲骨文与旧金山大通中心。</p>
+  </div>
+  <div class="stint-tabs">
+    <button class="stint-tab" data-i="0"><img src="assets/img/logo_warriors.svg" alt="">崛起 2009–14</button>
+    <button class="stint-tab active" data-i="1"><img src="assets/img/logo_warriors.svg" alt="">王朝 2014–19</button>
+    <button class="stint-tab" data-i="2"><img src="assets/img/logo_warriors.svg" alt="">归来 2019–26+</button>
+  </div>
+  <div class="stint-panel" id="stintPanel"></div>
+</section>
+
+<!-- 06 荣誉殿堂 -->
+<section id="honors">
+  <div class="sec-bg-word">HONORS</div>
+  <div class="sec-head reveal">
+    <div class="sec-no">06 / HONORS</div>
+    <h2 class="sec-title">荣誉殿堂 · <em>17 季的奖杯墙</em></h2>
+  </div>
+  <div class="honor-grid" id="honorGrid"></div>
+</section>
+
+<!-- 07 巴黎奥运夺金 -->
+<section id="olympics">
+  <div class="sec-head reveal">
+    <div class="sec-no">07 / PARIS 2024</div>
+    <h2 class="sec-title">巴黎奥运夺金 · <em>复仇者联盟的最后一舞</em></h2>
+    <p class="sec-desc">2024 年 8 月 10 日，库里用 24 分、8 记三分——其中末节 2 分 43 秒内连中 4 记三分——把金牌挂上胸前。这是他第一枚、也是最被期待的一枚奥运金牌。</p>
+  </div>
+  <div class="philly-grid">
+    <div class="philly-photos reveal">
+      <img src="assets/img/olympics-flag.jpg" alt="库里举美国国旗">
+      <img src="assets/img/olympics-golds.jpg" alt="库里勒布朗KD三块金牌">
+      <img src="assets/img/olympics-medal.jpg" alt="库里亲吻金牌">
+    </div>
+    <div class="reveal">
+      <div class="deal-card">
+        <div class="deal-item"><b>24 PTS</b><span>决赛对阵法国 · 8 记三分</span></div>
+        <div class="deal-item"><b>末节 4 三分</b><span>2 分 43 秒内连中终结悬念</span></div>
+        <div class="deal-item"><b>14.8 PPG</b><span>美国队内得分王 · 史上唯一半决赛+决赛 60+</span></div>
+      </div>
+      <p class="philly-quote">
+        「对我来说能拿到金牌是一种疯狂的感觉。我感谢上帝给我机会去体验这一切。」
+        <footer>—— 斯蒂芬·库里 · 2024 年 8 月 10 日 · 巴黎</footer>
+      </p>
+      <p class="sec-desc" style="margin-top:26px">
+        这支被外界称为「复仇者联盟」的队伍，由库里、勒布朗·詹姆斯、凯文·杜兰特领衔——巴黎周期前美国男篮刚在 2023 年 FIBA 世界杯四强不入。三人组在淘汰赛场均合计 53 分，未尝败绩。这是库里个人荣誉簿上最后一块缺失的拼图：现在他和詹姆斯、乔丹、魔术师、拉塞尔一样，成为同时拥有 NBA 总冠军 + MVP + 总决赛 MVP + 奥运金牌的全能先生。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 08 场外 -->
+<section id="offcourt">
+  <div class="sec-bg-word">EMPIRE</div>
+  <div class="sec-head reveal">
+    <div class="sec-no">08 / BEYOND THE COURT</div>
+    <h2 class="sec-title">场外图腾 · <em>More Than A Shooter</em></h2>
+    <p class="sec-desc">他不只是篮球运动员——他是品牌（SC30、Curry Brand）、是公益符号（Eat. Learn. Play.）、是流行文化的横切面。库里让篮球与嘻哈、高尔夫、家庭生活前所未有地融合在一起。</p>
+  </div>
+  <div class="off-grid" id="offGrid"></div>
+</section>
+
+<!-- 09 画廊 -->
+<section id="gallery">
+  <div class="sec-bg-word">GALLERY</div>
+  <div class="sec-head reveal">
+    <div class="sec-no">09 / GALLERY</div>
+    <h2 class="sec-title">王者画廊 · <em>真实影像档案</em></h2>
+    <p class="sec-desc">全部图片取自 NBA 官方渠道（cdn.nba.com）真实赛场影像，含 2022 总决赛夺冠夜、2024 巴黎奥运夺金、2025 第 4000 记三分之夜等关键瞬间。点击可放大浏览。</p>
+  </div>
+  <div class="gal-track" id="galTrack"></div>
+</section>
+
+<!-- 10 名言 -->
+<section id="quotes">
+  <div class="quote-box">
+    <div class="quote-mark">“</div>
+    <div class="quote-text" id="quoteText">对我们来说，所有问题的核心都是——任何人处在我们的处境都会艰难。</div>
+    <div class="quote-en" id="quoteEn">"It's hard for anyone in our position. We're trying to maintain competitiveness."</div>
+    <div class="quote-from" id="quoteFrom">—— 2026 年 7 月 · The Athletic 深度专访</div>
+    <div class="quote-dots" id="quoteDots"></div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer>
+  <div class="foot-grid">
+    <div>
+      <div class="foot-brand">CHEF <em>CURRY</em></div>
+      <p class="foot-desc">
+        本站为斯蒂芬·库里主题致敬网站，数据与图片均来自 NBA 官网（nba.com / cdn.nba.com）、ESPN、The Athletic、Olympics.com 等公开渠道。
+        最新动态板块每日自动更新。生涯数据截至 2025-26 赛季结束。
+      </p>
+    </div>
+    <div class="foot-col">
+      <div class="foot-h">数据来源</div>
+      <a href="https://www.nba.com" target="_blank" rel="noopener">NBA.com 官网</a>
+      <a href="https://www.espn.com/nba/" target="_blank" rel="noopener">ESPN NBA</a>
+      <a href="https://www.statmuse.com/nba/players/stephen-curry" target="_blank" rel="noopener">StatMuse</a>
+      <a href="https://www.olympics.com" target="_blank" rel="noopener">Olympics.com</a>
+    </div>
+    <div class="foot-col">
+      <div class="foot-h">金州岁月</div>
+      <span>2009–2014 · 崛起与脚踝</span>
+      <span>2014–2019 · 王朝与 MVP</span>
+      <span>2019–2022 · 低谷与第 4 冠</span>
+      <span>2022–2026 · 第 4000 记三分 + 奥运金牌</span>
+      <span>2026– · 第 18 季 · 仍在续写</span>
+    </div>
+  </div>
+  <div class="foot-base">
+    <span>© <span id="footYear"></span> THE SHOOTER'S REALM · 非官方致敬站点</span>
+    <span id="footUpdated">数据每日自动更新</span>
+  </div>
+</footer>
+
+<!-- 灯箱 -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-btn lb-close">✕</button>
+  <button class="lb-btn lb-prev">←</button>
+  <img src="" alt="">
+  <div class="lb-cap"></div>
+  <button class="lb-btn lb-next">→</button>
+</div>
+
+<script src="../../shared/vendor/gsap.min.js"></script>
+<script src="../../shared/vendor/ScrollTrigger.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/news-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

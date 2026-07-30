@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEBRON JAMES · 勒布朗·詹姆斯 | The King's Realm</title>
+<meta name="description" content="勒布朗·詹姆斯主题网站——完整生涯、详尽数据、荣誉纪录、场外帝国与每日更新的最新动态。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="assets/img/logo_1610612755.svg" type="image/svg+xml">
+</head>
+<body>
+
+<!-- 自定义光标 -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- 预加载 -->
+<div id="preloader">
+  <svg class="crown" viewBox="0 0 100 70">
+    <path d="M8 58 L4 18 L30 36 L50 8 L70 36 L96 18 L92 58 Z M8 64 L92 64" />
+  </svg>
+  <div class="pct">0%</div>
+  <div class="lbl">THE KING IS LOADING</div>
+</div>
+
+<!-- 导航 -->
+<nav>
+  <a class="nav-logo" href="#hero">
+    <svg viewBox="0 0 100 70" fill="none"><path d="M8 58 L4 18 L30 36 L50 8 L70 36 L96 18 L92 58 Z" stroke="#d4af37" stroke-width="6"/></svg>
+    KING <em>JAMES</em>
+  </a>
+  <div class="nav-links">
+    <a href="#news">最新动态</a>
+    <a href="#overview">生涯概览</a>
+    <a href="#stats">数据殿堂</a>
+    <a href="#timeline">生涯时间线</a>
+    <a href="#journey">四段旅程</a>
+    <a href="#honors">荣誉殿堂</a>
+    <a href="#offcourt">场外帝国</a>
+    <a href="#gallery">画廊</a>
+  </div>
+  <div class="nav-team">
+    <img src="assets/img/logo_1610612755.svg" alt="76人">
+    现效力 · 费城76人 #23
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-giant">KING</div>
+  <canvas id="particles"></canvas>
+  <div class="hero-vignette"></div>
+  <div class="hero-inner">
+    <div class="hero-tag"><span class="dot"></span> 2026.07.24 官宣 · 最后的决定 · 加盟费城76人</div>
+    <h1 class="hero-name">LEBRON<br>JAMES</h1>
+    <div class="hero-cn">勒 布 朗 · 詹 姆 斯</div>
+    <p class="hero-sub">历史得分王 · 4×总冠军 · 4×MVP · 第24个赛季的传奇远征</p>
+    <div class="hero-chips">
+      <div class="chip"><b>43,440</b><span>常规赛总得分 · 历史第1</span></div>
+      <div class="chip"><b>22</b><span>全明星 · 历史第1</span></div>
+      <div class="chip"><b>21</b><span>最佳阵容 · 历史第1</span></div>
+      <div class="chip"><b>10</b><span>总决赛之旅</span></div>
+      <div class="chip"><b>24th</b><span>NBA赛季 · 历史第1</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>SCROLL</span><div class="bar"></div></div>
+</header>
+
+<!-- 跑马灯 -->
+<div class="ticker"><div class="ticker-track" id="tickerTrack"></div></div>
+
+<!-- 01 最新动态 -->
+<section id="news">
+  <div class="sec-bg-word">NEWS</div>
+  <div class="sec-head reveal">
+    <div class="sec-no">01 / LATEST</div>
+    <h2 class="sec-title">最新动态 <span class="updated" id="newsUpdatedWrap"><i id="newsDot"></i><span id="newsUpdated"></span></span></h2>
+    <p class="sec-desc">追踪国王的每一步。本板块数据每日自动更新，来源为 NBA 官网、ESPN 及权威记者报道。</p>
+  </div>
+  <div class="news-grid" id="newsGrid"></div>
+</section>
+
+<!-- 02 生涯概览 -->
+<section id="overview">
+  <div class="sec-bg-word">LEGACY</div>
+  <div class="sec-head reveal">
+    <div class="sec-no">02 / OVERVIEW</div>
+    <h2 class="sec-title">生涯概览 · <em>23季铸就的丰碑</em></h2>
+    <p class="sec-desc">1984年12月30日出生于俄亥俄州阿克伦，2003年以状元身份登陆NBA。23个赛季、1622场常规赛——他面对的对手占NBA历史全部球员的36%。以下是截至2025-26赛季结束的真实生涯总账。</p>
+  </div>
+  <div class="stat-grid">
+    <div class="stat-card reveal"><span class="rank">历史第1</span><div class="stat-num" data-count="43440">0</div><div class="stat-label">常规赛总得分</div><div class="stat-sub">2023.2.7 超越贾巴尔加冕历史得分王</div></div>
+    <div class="stat-card reveal"><span class="rank">历史唯一</span><div class="stat-num" data-count="51961">0</div><div class="stat-label">常规赛+季后赛总得分</div><div class="stat-sub">NBA唯一突破50,000分大关的球员</div></div>
+    <div class="stat-card reveal"><span class="rank">历史第1</span><div class="stat-num" data-count="8521">0</div><div class="stat-label">季后赛总得分</div><div class="stat-sub">领先第二名乔丹 2,500+ 分</div></div>
+    <div class="stat-card reveal"><span class="rank">历史第4</span><div class="stat-num" data-count="12016">0</div><div class="stat-label">总助攻</div><div class="stat-sub">历史助攻榜第4 · 仅次于斯托克顿/基德/保罗</div></div>
+    <div class="stat-card reveal"><span class="rank">历史第25</span><div class="stat-num" data-count="12095">0</div><div class="stat-label">总篮板</div><div class="stat-sub">历史唯一 10000分+10000板+10000助</div></div>
+    <div class="stat-card reveal"><span class="rank">历史第1</span><div class="stat-num" data-count="1622">0</div><div class="stat-label">常规赛出场数</div><div class="stat-sub">2025-26赛季登顶历史出场王</div></div>
+    <div class="stat-card reveal"><span class="rank">历史第1</span><div class="stat-num" data-count="61029">0</div><div class="stat-label">总出场时间（分钟）</div><div class="stat-sub">折合连续作战 42.4 天</div></div>
+    <div class="stat-card reveal"><span class="rank">历史第1</span><div class="stat-num" data-count="15961">0</div><div class="stat-label">投篮命中数</div><div class="stat-sub">常规赛+季后赛命中数均为历史第1</div></div>
+    <div class="stat-card reveal"><span class="rank">历史第5</span><div class="stat-num" data-count="125">0</div><div class="stat-label">三双次数</div><div class="stat-sub">季后赛28次三双 · 历史第2</div></div>
+    <div class="stat-card reveal"><span class="rank">生涯场均</span><div class="stat-num" data-count="26.8" data-dec="1">0</div><div class="stat-label">得分</div><div class="stat-sub">连续23个赛季场均20+5+5 · 历史最长</div></div>
+    <div class="stat-card reveal"><span class="rank">生涯场均</span><div class="stat-num" data-count="7.5" data-dec="1">0</div><div class="stat-label">篮板</div><div class="stat-sub">锋线位置上的全能篮板手</div></div>
+    <div class="stat-card reveal"><span class="rank">生涯场均</span><div class="stat-num" data-count="7.4" data-dec="1">0</div><div class="stat-label">助攻</div><div class="stat-sub">2019-20赛季助攻王（10.2次）</div></div>
+  </div>
+</section>
+
+<!-- 03 数据殿堂 -->
+<section id="stats">
+  <div class="sec-bg-word">STATS</div>
+  <div class="sec-head reveal">
+    <div class="sec-no">03 / THE NUMBERS</div>
+    <h2 class="sec-title">数据殿堂 · <em>23个赛季的完整账簿</em></h2>
+    <p class="sec-desc">从18岁的20.9分到41岁的20.9分——起点与此刻奇妙重合，中间是历史最长的巅峰曲线。切换维度，逐季审视。</p>
+  </div>
+  <div class="chart-wrap reveal">
+    <div class="chart-tabs">
+      <button class="chart-tab active" data-key="pts">场均得分</button>
+      <button class="chart-tab" data-key="reb">场均篮板</button>
+      <button class="chart-tab" data-key="ast">场均助攻</button>
+      <button class="chart-tab" data-key="gp">出场数</button>
+    </div>
+    <canvas id="seasonChart"></canvas>
+    <div class="chart-note">数据来源：NBA.com / Basketball-Reference · <b>2003-04 至 2025-26</b> · 金色底纹为夺冠赛季，紫色底纹为MVP赛季</div>
+  </div>
+  <div class="season-table-wrap reveal">
+    <div class="season-scroll">
+      <table class="season-table">
+        <thead>
+          <tr><th>赛季 / 球队 / 荣誉</th><th>出场</th><th>得分</th><th>篮板</th><th>助攻</th><th>投篮%</th><th>三分%</th></tr>
+        </thead>
+        <tbody id="seasonTbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="sec-head reveal" style="margin-top:90px">
+    <div class="sec-no">03+ / RECORDS</div>
+    <h2 class="sec-title">历史纪录 · <em>他独自站立的地方</em></h2>
+  </div>
+  <div class="records-grid" id="recordsGrid"></div>
+</section>
+
+<!-- 04 生涯时间线 -->
+<section id="timeline">
+  <div class="sec-bg-word">JOURNEY</div>
+  <div class="sec-head reveal">
+    <div class="sec-no">04 / TIMELINE</div>
+    <h2 class="sec-title">生涯时间线 · <em>从阿克伦到永恒</em></h2>
+    <p class="sec-desc">42年人生、24季征程。向下滚动，沿时间之河横渡国王的整个故事。</p>
+  </div>
+  <div class="tl-track" id="tlTrack"></div>
+  <div class="tl-progress"><i id="tlProgressBar" style="width:0"></i></div>
+  <div class="tl-hint">↕ 继续滚动 · 横向穿越 1984 — 2026</div>
+</section>
+
+<!-- 05 四段旅程 -->
+<section id="journey">
+  <div class="sec-bg-word">TEAMS</div>
+  <div class="sec-head reveal">
+    <div class="sec-no">05 / THE JOURNEY</div>
+    <h2 class="sec-title">四段旅程 · <em>五站传奇</em></h2>
+    <p class="sec-desc">克利夫兰—迈阿密—克利夫兰—洛杉矶—费城。每一次选择都改写联盟格局，每一站都留下总冠军或不可磨灭的印记。</p>
+  </div>
+  <div class="stint-tabs">
+    <button class="stint-tab" data-i="0"><img src="assets/img/logo_1610612739.svg" alt="">骑士 1.0</button>
+    <button class="stint-tab" data-i="1"><img src="assets/img/logo_1610612748.svg" alt="">热火</button>
+    <button class="stint-tab" data-i="2"><img src="assets/img/logo_1610612739.svg" alt="">骑士 2.0</button>
+    <button class="stint-tab" data-i="3"><img src="assets/img/logo_1610612747.svg" alt="">湖人</button>
+    <button class="stint-tab active" data-i="4"><img src="assets/img/logo_1610612755.svg" alt="">76人 · 新篇章</button>
+  </div>
+  <div class="stint-panel" id="stintPanel"></div>
+</section>
+
+<!-- 06 荣誉殿堂 -->
+<section id="honors">
+  <div class="sec-bg-word">HONORS</div>
+  <div class="sec-head reveal">
+    <div class="sec-no">06 / HONORS</div>
+    <h2 class="sec-title">荣誉殿堂 · <em>23季的奖杯墙</em></h2>
+  </div>
+  <div class="honor-grid" id="honorGrid"></div>
+</section>
+
+<!-- 07 76人新篇章 -->
+<section id="philly">
+  <div class="sec-head reveal">
+    <div class="sec-no">07 / THE LAST DECISION</div>
+    <h2 class="sec-title">费城新篇章 · <em>最后的决定</em></h2>
+    <p class="sec-desc">2026年7月24日，詹姆斯在社交媒体宣布加盟费城76人——「我以为一切都结束了……但我仍然热爱这项运动，我还有东西可以奉献。」</p>
+  </div>
+  <div class="philly-grid">
+    <div class="philly-photos reveal">
+      <img src="assets/img/lebron-embiid-76ers.jpg" alt="詹姆斯与恩比德">
+      <img src="assets/img/lebron-embiid-usa.jpg" alt="奥运并肩作战">
+      <img src="assets/img/maxey-hug.jpg" alt="马克西致意">
+    </div>
+    <div class="reveal">
+      <div class="deal-card">
+        <div class="deal-item"><b>2年/$8M</b><span>老将底薪 · 第二年球员选项</span></div>
+        <div class="deal-item"><b>-92%</b><span>薪资降幅（上季$52.6M）</span></div>
+        <div class="deal-item"><b>第24季</b><span>NBA历史赛季数第一人</span></div>
+      </div>
+      <p class="philly-quote">
+        「这是我最后的决定。不为金钱，不为家庭。我依然想要牺牲、想要苦练、想要磨砺、想要竞争、想要赢，想要再一次感受赢得总冠军的滋味。我相信我能帮助费城76人成为一支冠军球队。」
+        <footer>—— 勒布朗·詹姆斯 · 2026年7月24日</footer>
+      </p>
+      <p class="sec-desc" style="margin-top:26px">
+        他将与乔尔·恩比德、泰瑞斯·马克西、杰伦·布朗组成豪华四巨头——上赛季的76人45胜37负止步东部半决赛，而詹姆斯生涯12次打进分区决赛。宾州州长已宣布签约日为「勒布朗·詹姆斯日」。1983年之后，费城一直在等待它的下一座奥布莱恩杯。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 08 场外帝国 -->
+<section id="offcourt">
+  <div class="sec-bg-word">EMPIRE</div>
+  <div class="sec-head reveal">
+    <div class="sec-no">08 / BEYOND THE COURT</div>
+    <h2 class="sec-title">场外帝国 · <em>More Than An Athlete</em></h2>
+    <p class="sec-desc">首位现役十亿美元身家的NBA球员（福布斯，2022）。商业、公益、家庭——球场之外，他构建了同样恢宏的第二人生。</p>
+  </div>
+  <div class="off-grid" id="offGrid"></div>
+</section>
+
+<!-- 09 画廊 -->
+<section id="gallery">
+  <div class="sec-bg-word">GALLERY</div>
+  <div class="sec-head reveal">
+    <div class="sec-no">09 / GALLERY</div>
+    <h2 class="sec-title">王者画廊 · <em>真实影像档案</em></h2>
+    <p class="sec-desc">全部图片取自 NBA 官方渠道（cdn.nba.com）真实赛场影像，点击可放大浏览。</p>
+  </div>
+  <div class="gal-track" id="galTrack"></div>
+</section>
+
+<!-- 10 名言 -->
+<section id="quotes">
+  <div class="quote-box">
+    <div class="quote-mark">“</div>
+    <div class="quote-text" id="quoteText">我仍然热爱这项运动，我还有东西可以奉献。</div>
+    <div class="quote-en" id="quoteEn">I still truly love this game, and I have more to give.</div>
+    <div class="quote-from" id="quoteFrom">—— 2026年7月24日 · 宣布加盟76人</div>
+    <div class="quote-dots" id="quoteDots"></div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer>
+  <div class="foot-grid">
+    <div>
+      <div class="foot-brand">KING <em>JAMES</em></div>
+      <p class="foot-desc">
+        本站为勒布朗·詹姆斯主题致敬网站，数据与图片均来自 NBA 官网（nba.com / cdn.nba.com）、ESPN、Olympics.com 等公开渠道。
+        最新动态板块每日自动更新。生涯数据截至 2025-26 赛季结束。
+      </p>
+    </div>
+    <div class="foot-col">
+      <div class="foot-h">数据来源</div>
+      <a href="https://www.nba.com" target="_blank" rel="noopener">NBA.com 官网</a>
+      <a href="https://www.espn.com/nba/" target="_blank" rel="noopener">ESPN NBA</a>
+      <a href="https://www.basketball-reference.com" target="_blank" rel="noopener">Basketball-Reference</a>
+      <a href="https://www.olympics.com" target="_blank" rel="noopener">Olympics.com</a>
+    </div>
+    <div class="foot-col">
+      <div class="foot-h">生涯旅程</div>
+      <span>2003-2010 · 克利夫兰骑士</span>
+      <span>2010-2014 · 迈阿密热火</span>
+      <span>2014-2018 · 克利夫兰骑士</span>
+      <span>2018-2026 · 洛杉矶湖人</span>
+      <span>2026- · 费城76人</span>
+    </div>
+  </div>
+  <div class="foot-base">
+    <span>© <span id="footYear"></span> THE KING'S REALM · 非官方致敬站点</span>
+    <span id="footUpdated">数据每日自动更新</span>
+  </div>
+</footer>
+
+<!-- 灯箱 -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-btn lb-close">✕</button>
+  <button class="lb-btn lb-prev">←</button>
+  <img src="" alt="">
+  <div class="lb-cap"></div>
+  <button class="lb-btn lb-next">→</button>
+</div>
+
+<script src="../../shared/vendor/gsap.min.js"></script>
+<script src="../../shared/vendor/ScrollTrigger.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/news-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

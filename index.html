@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NBA LEGENDS · 传奇球员专属主页</title>
+<meta name="description" content="NBA 传奇球员专属主页归档 —— 每位球员一个独立文件夹，共享视觉与动效引擎。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/css/hub.css">
+</head>
+<body>
+<div class="hub-glow"></div>
+
+<header class="hub-nav">
+  <div class="hub-logo">NBA<span>LEGENDS</span></div>
+  <nav class="hub-nav-links">
+    <a href="#legends">球员档案</a>
+    <a href="#plan">分类规划</a>
+    <a href="https://github.com/mango23/nba-legends" target="_blank" rel="noopener">仓库</a>
+  </nav>
+</header>
+
+<section class="hub-hero">
+  <div class="hub-hero-kicker">传奇球员 · 专属主页归档</div>
+  <h1 class="hub-hero-title">NBA<br><em>LEGENDS</em></h1>
+  <p class="hub-hero-sub">
+    每位球员拥有独立文件夹 <code>players/&lt;slug&gt;/</code>，共用同一套视觉与动效引擎；
+    新增一位传奇，只需在 <code>players/</code> 下新建文件夹并填入数据。
+  </p>
+  <div class="hub-hero-meta">
+    <span><b id="legend-count">2</b> 位在册</span>
+    <span class="dot">·</span>
+    <span>共享引擎 <code>shared/</code></span>
+    <span class="dot">·</span>
+    <span>每日自动更新</span>
+  </div>
+</section>
+
+<section class="hub-section" id="legends">
+  <div class="hub-section-head">
+    <h2>球员档案</h2>
+    <p>点击任意卡片进入该球员的完整专属主页。</p>
+  </div>
+  <div class="legend-grid" id="legend-grid"><!-- rendered by hub.js --></div>
+</section>
+
+<section class="hub-section hub-plan" id="plan">
+  <div class="hub-section-head">
+    <h2>分类规划</h2>
+    <p>面向未来持续扩展的目录结构。</p>
+  </div>
+  <div class="plan-grid">
+    <div class="plan-card">
+      <div class="plan-ico">📁</div>
+      <h3>players/&lt;slug&gt;/</h3>
+      <p>每位球员一个独立站点：<code>index.html</code> · <code>css/</code> · <code>js/</code> · <code>data/</code> · <code>assets/img/</code> · <code>scripts/update_news.py</code>。互不干扰，可单独部署。</p>
+    </div>
+    <div class="plan-card">
+      <div class="plan-ico">🧩</div>
+      <h3>shared/</h3>
+      <p>跨球员复用的资源：<code>vendor/</code>(GSAP/ScrollTrigger) · <code>css/hub.css</code> · <code>js/hub.js</code>。换肤只需改各自 <code>css/style.css</code> 的配色变量。</p>
+    </div>
+    <div class="plan-card">
+      <div class="plan-ico">🔄</div>
+      <h3>每日自动更新</h3>
+      <p>每位球员用各自的 <code>update_news.py</code> 抓取新闻，再由根目录 <code>scripts/sync_news.py &lt;slug&gt;</code> 增量推送到 GitHub Pages。</p>
+    </div>
+    <div class="plan-card">
+      <div class="plan-ico">➕</div>
+      <h3>如何新增</h3>
+      <p>复制 <code>players/stephen-curry/</code> 为 <code>players/&lt;新slug&gt;/</code>，替换 <code>js/data.js</code> 数据与 <code>assets/img/</code> 图片，并在本页 <code>LEGENDS</code> 数组追加一项即可。</p>
+    </div>
+  </div>
+</section>
+
+<footer class="hub-foot">
+  <div>NBA LEGENDS · 传奇归档</div>
+  <div class="hub-foot-meta">数据来源 NBA.com / StatMuse / ESPN · 图片来自官方渠道 · 部署于 GitHub Pages</div>
+</footer>
+
+<script src="shared/vendor/gsap.min.js"></script>
+<script src="shared/vendor/ScrollTrigger.min.js"></script>
+<script src="shared/js/hub.js"></script>
+</body>
+</html>
